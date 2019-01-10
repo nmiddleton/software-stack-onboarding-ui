@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\132.5.196.110\shared\Profile Release" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="ITIC.aspx" publishTime="02/23/2011 10:15:19" />
+    <file relUrl="XMLProfile.aspx" publishTime="01/25/2011 10:33:21" />
+    <file relUrl="Images/AddProvisioningPlan24x24p.png" publishTime="09/25/2008 20:20:24" />
+    <file relUrl="bin/TR.Profile.Common.dll" publishTime="03/16/2011 14:07:53" />
+    <file relUrl="bin/TR.Profile.Data.dll" publishTime="03/21/2011 13:14:49" />
+    <file relUrl="Images/AdvancedPlanProperties24x24p.png" publishTime="09/25/2008 20:20:26" />
+    <file relUrl="ApplicationStacks.aspx" publishTime="03/09/2011 16:07:13" />
+    <file relUrl="Global.asax" publishTime="01/25/2011 10:33:23" />
+    <file relUrl="bin/TR.Profile.UI.pdb" publishTime="03/21/2011 13:20:18" />
+    <file relUrl="Profile.xml" publishTime="02/03/2011 10:03:40" />
+    <file relUrl="Images/Delete16x16p.png" publishTime="09/25/2008 20:35:38" />
+    <file relUrl="bin/TR.Profile.Common.pdb" publishTime="03/16/2011 14:07:53" />
+    <file relUrl="ITICs.aspx" publishTime="03/17/2011 14:50:34" />
+    <file relUrl="AdvancedConfigurationActions.aspx" publishTime="01/25/2011 10:33:24" />
+    <file relUrl="Images/Error24x24p.png" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/DocumentEmpty16x16p.png" publishTime="09/25/2008 20:35:40" />
+    <file relUrl="Profile.xsd" publishTime="03/04/2011 11:23:00" />
+    <file relUrl="Default.master" publishTime="03/17/2011 09:28:51" />
+    <file relUrl="Test.htm" publishTime="01/25/2011 09:57:33" />
+    <file relUrl="NewProvisioningPlan.aspx" publishTime="01/25/2011 10:33:22" />
+    <file relUrl="Images/DropFilter24x24p.png" publishTime="10/08/2008 23:57:00" />
+    <file relUrl="Summary.aspx" publishTime="03/03/2011 12:45:53" />
+    <file relUrl="PlatformStacks.aspx" publishTime="01/25/2011 10:33:22" />
+    <file relUrl="Images/Back24x24p.png" publishTime="09/25/2008 20:20:22" />
+    <file relUrl="bin/TR.Profile.UI.dll" publishTime="03/21/2011 13:20:18" />
+    <file relUrl="Images/DocumentEdit24x24p.png" publishTime="09/25/2008 20:20:26" />
+    <file relUrl="Images/Warning24x24p.png" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="CustomerObjects.aspx" publishTime="03/21/2011 12:17:39" />
+    <file relUrl="bin/TR.Profile.Data.pdb" publishTime="03/21/2011 13:14:49" />
+    <file relUrl="ModifyProfile.aspx" publishTime="01/25/2011 10:33:22" />
+    <file relUrl="DomainNameResolution.aspx" publishTime="03/03/2011 12:26:33" />
+    <file relUrl="Profile.xslt" publishTime="03/04/2011 11:33:42" />
+    <file relUrl="Images/DocumentOK24x24p.png" publishTime="09/25/2008 20:20:26" />
+    <file relUrl="Default.aspx" publishTime="03/17/2011 14:51:01" />
+    <file relUrl="Images/Up16x16p.png" publishTime="09/25/2008 20:35:34" />
+    <file relUrl="Images/Down16x16p.png" publishTime="09/25/2008 20:35:34" />
+    <file relUrl="Images/Warning16x16p.png" publishTime="09/25/2008 20:36:06" />
+    <file relUrl="ProvisioningPlanExtras.aspx" publishTime="02/28/2011 09:42:41" />
+    <file relUrl="Images/Help24x24p.png" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/Save24x24p.png" publishTime="09/25/2008 20:20:26" />
+    <file relUrl="Images/Update16x16p.png" publishTime="09/25/2008 20:35:38" />
+    <file relUrl="Images/DeleteProvisioningPlan24x24p.png" publishTime="09/25/2008 20:20:26" />
+    <file relUrl="Images/Logo.jpg" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/Background.PNG" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/EnabledTab.PNG" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/Edit16x16p.png" publishTime="09/25/2008 20:35:42" />
+    <file relUrl="bin/TR.Profile.Domain.pdb" publishTime="03/21/2011 13:14:49" />
+    <file relUrl="Images/Filter24x24p.png" publishTime="10/08/2008 23:57:00" />
+    <file relUrl="Images/Create24x24p.png" publishTime="11/25/2010 10:40:13" />
+    <file relUrl="Images/Cancel16x16p.png" publishTime="09/25/2008 20:35:42" />
+    <file relUrl="Web.config" publishTime="03/17/2011 09:20:22" />
+    <file relUrl="Images/DocumentOK16x16p.png" publishTime="09/25/2008 20:35:38" />
+    <file relUrl="HTMLProfile.aspx" publishTime="01/25/2011 10:33:23" />
+    <file relUrl="Images/DisabledTab.PNG" publishTime="12/06/2010 18:49:45" />
+    <file relUrl="Profiles/test.xml" publishTime="01/17/2011 18:08:12" />
+    <file relUrl="bin/TR.Profile.Domain.dll" publishTime="03/21/2011 13:14:49" />
+    <file relUrl="AdvancedSummary.aspx" publishTime="02/21/2011 10:56:12" />
+    <file relUrl="Document.aspx" publishTime="01/25/2011 10:33:23" />
+    <file relUrl="Test.aspx" publishTime="01/25/2011 11:51:27" />
+  </publishProfile>
+</publishData>

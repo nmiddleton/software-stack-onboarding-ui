@@ -1,0 +1,65 @@
+﻿<!--
+                           $Id: Default.master 13936 2010-11-24 14:57:22Z neil.middleton $
+              $LastChangedDate: 2010-11-24 14:57:22 +0000 (Wed, 24 Nov 2010) $
+          $LastChangedRevision: 13936 $
+                $LastChangedBy: neil.middleton $
+                      $HeadURL: https://sami.cdt.int.thomsonreuters.com/svn/gms_gmi/trunk/infrastructure/tools/webfrontend/Solution/TR.Profile.UI/Default.master.cs $
+-->
+
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="DefaultMasterPage" Codebehind="Default.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+		<asp:ContentPlaceHolder id="TitleContentPlaceHolder" runat="server" />
+	</title>
+</head>
+
+<body style="font-family:Arial; margin:0px; ">
+    <form id="form1" runat="server">
+        <table width="100%">
+			<!-- HEADER : BEGIN -->
+            <thead>
+                <tr>
+                    <td style="border-bottom-style:solid; border-bottom-width:5px; border-bottom-color:Orange;" >
+                        <img alt="LOGO" src="Images/Logo.jpg" />
+                    </td>
+                </tr>
+            </thead>
+			<!-- HEADER : END -->
+
+			<!-- BODY : BEGIN -->
+            <tbody>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder id="BodyContentPlaceHolder" runat="server" />
+                    </td>
+                </tr>
+            </tbody>
+			<!-- BODY : END -->
+
+			<!-- FOOTER : BEGIN -->
+            <tfoot>
+                <tr>
+                    <td align="center" style="border-top-style:solid; border-top-width:5px; border-top-color:Orange;" >
+                        <table border="0px" cellpadding="0px" cellspacing="0px" width="100%">
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&copy;&nbsp;&nbsp;&nbsp;2010&nbsp;&nbsp;&nbsp;THOMSON&nbsp;REUTERS</td>
+                                <td align="right"><asp:Label ID="VersionLabel" runat="server" />&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tfoot>
+			<!-- FOOTER : END -->
+        </table>
+
+		<!-- DEBUG : BEGIN -->
+		<asp:ContentPlaceHolder id="DebugContentPlaceHolder" runat="server" />
+		<!-- DEBUG : END -->
+    </form>
+</body>
+
+</html>

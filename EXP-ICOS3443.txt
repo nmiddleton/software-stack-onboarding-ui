@@ -1,0 +1,25 @@
+ICOS Reference                : 3443 
+
+Program Name                  : GMI Web Front End 
+
+Program Version               : 1.0 
+
+Sub-Products                  : N/A 
+
+Classification
+--------------
+
+US ECCN                       : EAR99 
+
+EU ECCN                       : None 
+
+Thomson Reuters Export Code   : NL 
+
+Export Note                   : This export code means ‘Not Licensable’ and 
+                                is applied to items that can be exported 
+                                ‘no license required’, under both EU and US 
+                                regulations. Exports of NL items can be 
+                                made to all countries except embargoed 
+                                countries (Cuba, Iran, Sudan, Syria, and 
+                                North Korea). 
+

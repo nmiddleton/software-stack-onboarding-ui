@@ -1,0 +1,121 @@
+﻿<?xml version="1.0"?>
+<xs:schema id="ProfileSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" >
+
+	<xs:element name="PROFILE" >
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="PROFILE_CONTEXT" type="PROFILE_CONTEXT" />
+				<xs:element name="ITIC" type="ITIC" />
+				<xs:element name="PROV_PLANS" type="PROV_PLANS" />
+				<xs:element name="LOCAL_PROPERTIES" type="LOCAL_PROPERTIES" />
+			</xs:all>
+
+			<xs:attribute name="STRUCTURE_VERSION" type="xs:string" fixed="2.3.2.3" />
+			<xs:attribute name="CREATED_AT" type="xs:dateTime" use="required" />
+			<xs:attribute name="UPDATED_AT" type="xs:dateTime" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="PROFILE_CONTEXT">
+		<xs:attribute name="PLATFORM" type="xs:string" use="required" />
+		<xs:attribute name="PLATFORM_VERSION" type="xs:string" use="required" />
+		<xs:attribute name="ARCHITECTURE" type="xs:string" use="required" />
+		<xs:attribute name="TRBUILD" type="xs:string" use="required" />
+		<xs:attribute name="PROFILE_VERSION" type="xs:string" use="required" />
+		<xs:attribute name="GMI_MANAGEMENT_PROFILE" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="ITIC">
+		<xs:attribute name="GMI_INFRASTRUCTURE" use="required" >
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="3"/>
+					<xs:maxLength value="4" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GMI_INFRASTRUCTURE_NAME" type="xs:string" />
+		<xs:attribute name="GMI_CAPABILITY" use="required" >
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="3"/>
+					<xs:maxLength value="4" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GMI_CAPABILITY_NAME" type="xs:string" />
+		<xs:attribute name="GMI_SYSTEM_GROUP" use="required" >
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:length value="4"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="GMI_SYSTEM_GROUP_NAME" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="PROV_PLANS">
+		<xs:sequence>
+			<xs:element name="PROV_PLAN" maxOccurs="unbounded" >
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="PROV_PLAN_PROPERTIES" minOccurs="0" maxOccurs="1" >
+							<xs:complexType >
+								<xs:sequence>
+									<xs:element name="PLAN_PROPERTY" maxOccurs="unbounded">
+										<xs:complexType>
+											<xs:attribute name="PROPERTY_NAME" type="xs:string" use="required" />
+											<xs:attribute name="PROPERTY_VALUE" type="xs:string" use="required" />
+											<xs:attribute name="PROPERTY_TITLE" type="xs:string" use="required" />
+											<xs:attribute name="PROPERTY_DESCRIPTION" type="xs:string" />
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element name="PROV_PLAN_ACTIONS" minOccurs="1" maxOccurs="1" >
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="ACTION" maxOccurs="unbounded" >
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="ACTION_PARAMETER" maxOccurs="7" >
+													<xs:complexType>
+														<xs:attribute name="PARAM_NAME" type="xs:string" use="required" />
+														<xs:attribute name="VALUE" type="xs:string" use="required" />
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+
+											<xs:attribute name="RUNORDER" type="xs:integer" use="required" />
+											<xs:attribute name="ACTION_TYPE_NAME" type="xs:string" use="required" />
+											<xs:attribute name="CONTINUE_ON_ERROR" type="xs:string" use="required" />
+											<xs:attribute name="MAX_RETRIES" type="xs:integer" use="required" />
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>						
+					</xs:all>
+
+					<xs:attribute name="PLAN_GROUP_NAME" type="xs:string" use="required" />
+					<xs:attribute name="PLAN_GROUP_TYPE" type="xs:string" use="required" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+
+	<xs:complexType name="LOCAL_PROPERTIES">
+		<xs:sequence>
+			<xs:element name="LOCAL_PROPERTY" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:attribute name="PROPERTY_NAME" type="xs:string" use="required" />
+					<xs:attribute name="PROPERTY_KEY" type="xs:string" use="required" />
+					<xs:attribute name="PROPERTY_VALUE" type="xs:string" />
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
